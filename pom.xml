@@ -18,10 +18,27 @@
         <module>kafka-work</module>
         <module>lbs-work</module>
         <module>spring-demo</module>
-        <module>billing-module</module>
         <module>support-module</module>
+        <module>dubbo-work</module>
+        <module>rocketmq-work</module>
+        <module>Sentinel-work</module>
+        <module>acl-work</module>
     </modules>
 
+    <properties>
+        <lombok.version>1.18.2</lombok.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <repositories>
         <repository>
